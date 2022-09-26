@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | QR code component</title>
 
@@ -12,22 +16,20 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    @font-face {
-      font-family: myFont;
-      src: url(https://fonts.google.com/specimen/Outfit);
-    }
+
 
     body{
-      height: 100%;
-      font-family: myFont;
+      margin: 0px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
       padding-top: 7%;
-      
+      height: 100%;
     }
     
     #blue{
       background-color: hsl(212, 45%, 89%);
       width: 80%;
-      height: 100%;
+      height: 90%;
       margin: auto;
       box-shadow: 5px 5px 20px rgb(0, 0, 0);
       padding: 4%;
@@ -35,26 +37,26 @@
 
     #white{
       background-color: white;
-      width: 20%;
       margin: auto;
+      max-width: 300px;
       padding: 2%;
       border-radius: 20px;
     }
 
-    
-
-    #imgdiv{
-      margin: 0 auto;
-    }
+ 
 
     #qr{
       display: block;
-      width: 90%;
+      width: 280px;
       margin: 0 auto;
       border-radius: 20px;
     }
     h3{
       text-align: center;
+    }
+    p{
+      text-align: center;
+      color: hsl(218, 44%, 22%);
     }
     
   </style>
@@ -63,7 +65,7 @@
 
   <div id="blue">
   <div id="white">
-    <div id="imgdiv"><img id="qr" src="images/image-qr-code.png" alt=""></div>
+  <img id="qr" src="images/image-qr-code.png" alt="">
     <h3>Improve your front-end skills by building projects</h3>
     
     <p> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
